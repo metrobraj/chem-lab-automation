@@ -2,9 +2,6 @@ import math
 # this page holds all formulas
 
 def nernst(ecell0, zn, cu, T):
-<<<<<<< Updated upstream
-    return (ecell0 - ((8.314*T)/(2*96500))*math.log(zn/cu))
-=======
     return (ecell0 - ((8.314*T)/193000)*math.log(zn/cu))
 
 def gibbs(ecell0, zn, cu, T):
@@ -33,7 +30,6 @@ def free_energy():
 
     print(f"Free-energy change at 30 C is {kgibb30:.3f} kJ/mol")
     print(f"Free-energy change at 50 C is {kgibb50:.3f} kJ/mol")
->>>>>>> Stashed changes
 
 
 def enthalpy():
