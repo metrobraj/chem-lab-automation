@@ -1,5 +1,6 @@
 import calculations
 #ask user for input
+<<<<<<< Updated upstream
 print("Enter [1] for free energy, [2] for average free energy at 40 degrees")
 print("Need Free-energy change yeah?")
 print("Well, you'll need to provide Cu and Zn concentrations(separate by commas, in order)")
@@ -20,3 +21,7 @@ print(f"Free-energy change at 30 C is {kgibb30:.3f} kJ/mol")
 print(f"Free-energy change at 50 C is {kgibb50:.3f} kJ/mol")
 
 
+=======
+print("Enter [1] for free energy change at 30 degrees and 50 degrees")
+calculations.free_energy()
+>>>>>>> Stashed changes
