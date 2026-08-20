@@ -1,4 +1,10 @@
 import calculations
 #ask user for input
-print("Enter [1] for free energy change at 30 degrees and 50 degrees")
-calculations.free_energy()
+print("Ready? [1] for yes, [2] for no")
+while True:
+    if int(input())==1:
+        calculations.free_energy()
+        break
+    else: 
+        print("alr, waiting for you")
+        continue

@@ -19,7 +19,7 @@ def free_energy():
     zn = float(zn)
 
     #take ecell nought value
-    print("Thank you, Ecell nought values(as calculated by nernst equation) at 30 deg")
+    print("Give Ecell values(calculated by nernst equation) at 30 C and 50 C")
     ecell = input()
     ecell30, ecell50 = ecell.split(", ")
     ecell30 = float(ecell30)
@@ -28,9 +28,15 @@ def free_energy():
     kgibb30 = (gibbs(ecell30, zn, cu, 303))/1000
     kgibb50 = (gibbs(ecell50, zn, cu, 323))/1000
 
+    kgibb40 = (kgibb30+kgibb50)/2
+
     print(f"Free-energy change at 30 C is {kgibb30:.3f} kJ/mol")
+    print(f"Free-energy change at 40 C is {kgibb40:.3f} kJ/mol")
     print(f"Free-energy change at 50 C is {kgibb50:.3f} kJ/mol")
 
+    enth = (kgibb50-kgibb30)/(20)
+    print(f"Enthalpy change at 40 degrees is {enth:.3f} kJ/mol")
 
-def enthalpy():
-    return
+    entr = (enth-kgibb40)/313
+    print(f"Entropy change at 40 degrees is {entr:.3f} kJ/mol")
+
