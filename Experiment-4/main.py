@@ -29,7 +29,7 @@ def get_emf():
 
     n = int(input("Enter the number of readings taken for titration-I:\n"))
     for i in range(n):
-        data = input("Pleasde enter the readings as : (Vol of KMnO4) (Reading by potentiometer)").split()
+        data = input("Pleasde enter the readings as : (Vol of KMnO4) (Reading by potentiometer)\n").split()
         EMF_val[float(data[0])] = float(data[1])
 
     a = float(input("Enter the starting value for titration-II:\n"))#4
@@ -59,7 +59,7 @@ def plot_emf():
     plt.plot(avg_vol,dedv,marker = ".")
     plt.show()
 
-#get_emf()
+get_emf()
 plot_emf()
 
 
