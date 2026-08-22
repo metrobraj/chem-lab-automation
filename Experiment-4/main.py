@@ -54,9 +54,9 @@ def calc_dedv():
 def plot_emf():
     calc_dedv()
     plt.figure()
-    plt.plot(EMF_val.keys(),EMF_val.values())
+    plt.plot(EMF_val.keys(),EMF_val.values(),marker = ".")
     plt.figure()
-    plt.plot(avg_vol,dedv)
+    plt.plot(avg_vol,dedv,marker = ".")
     plt.show()
 
 #get_emf()
