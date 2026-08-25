@@ -1,5 +1,5 @@
 import math
-#fixing...
+#EMF CELL HAS BEEN FIXED. DANIEL CELL IS PENDING.
 
 #we give the user 2 options, whether to opt for emf measured from various conc, or 
 def emfcell():
@@ -39,6 +39,8 @@ def emfcell():
     print(f"Average E0 for Cu: {avgcu:.3f}")
     print("==============================================")
 
+def danielcell():
+    n
 
 print("Enter [1] for EMF measured for various concentrations of M/Mn+ system")
 print("Enter [2] for EMF of Daniel Cell observed")
