@@ -38,9 +38,11 @@ def emfcell():
     print(f"Average E0 for Zn: {avgzn:.3f}")
     print(f"Average E0 for Cu: {avgcu:.3f}")
     print("==============================================")
+    ecell=avgcu-avgzn
+    return ecell
 
 def danielcell():
-    n
+    print("Give Ecell")
 
 print("Enter [1] for EMF measured for various concentrations of M/Mn+ system")
 print("Enter [2] for EMF of Daniel Cell observed")
@@ -56,4 +58,4 @@ if(n==1):
         pass
 else:
     #FUNCTION FOR DANIEL CELL
-    pass
+    danielcell()
