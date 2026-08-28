@@ -75,7 +75,7 @@ def results():
         print(f"{dedv[i]:.3f}",end=',')
     print()
     print("Average Volume: ")
-    for i in range(len(dedv)):
+    for i in range(len(avg_vol)):
         print(f"{avg_vol[i]:.3f}",end=',')
 
 
